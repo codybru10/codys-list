@@ -1,2 +1,4 @@
 <app-jobs-listing [childJobs]="masterJobs" (editSender)="editJob($event)"></app-jobs-listing>
 <app-edit-job [childSelectedJob]="selectedJob" (doneSender)="doneEditing()"></app-edit-job>
+<app-new-job (sendNewJob)="addJob($event)" *ngIf="toggle"></app-new-job>
+<button class="btn btn-primary" (click)="toggleForm()">Add New Job Posting</button>

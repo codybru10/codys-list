@@ -1,0 +1,12 @@
+<h2>New Job</h2>
+<div>
+  <label for="title">Title</label>
+  <input type="text" name="title" #newTitle>
+  <label for="user">User</label>
+  <input type="text" name="user" #newUser>
+  <label for="field">Field</label>
+  <input type="text" name="field" #newField>
+  <label for="location">Location</label>
+  <input type="text" name="location" #newLocation>
+  <button (click)="submitForm(newTitle.value, newUser.value, newField.value, newLocation.value); newTitle.value=''; newUser.value=''; newField.value=''; newLocation.value='';">Submit Job</button>
+</div>

@@ -12,6 +12,7 @@ export class JobsComponent {
     new Job('JP_Code2013', 'Personal Cook', 'Cooking', 'My house bia')
   ]
 
+  toggle = false;
   selectedJob = null;
 
   editJob(clickedJob) {
@@ -20,5 +21,13 @@ export class JobsComponent {
 
   doneEditing() {
     this.selectedJob = null;
+  }
+
+  toggleForm() {
+    this.toggle = !this.toggle;
+  }
+
+  addJob(newJob) {
+    this.masterJobs.push(newJob);
   }
 }

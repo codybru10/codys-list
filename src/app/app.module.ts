@@ -13,6 +13,7 @@ import { NewSaleComponent } from './sales/new-sale/new-sale.component';
 import { EditSaleComponent } from './sales/edit-sale/edit-sale.component';
 import { JobsListingComponent } from './jobs/jobs-listing/jobs-listing.component';
 import { EditJobComponent } from './jobs/edit-job/edit-job.component';
+import { NewJobComponent } from './jobs/new-job/new-job.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EditJobComponent } from './jobs/edit-job/edit-job.component';
     NewSaleComponent,
     EditSaleComponent,
     JobsListingComponent,
-    EditJobComponent
+    EditJobComponent,
+    NewJobComponent
   ],
   imports: [
     BrowserModule,
