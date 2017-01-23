@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { SalesComponent } from './sales/sales.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    SalesComponent
+    SalesComponent,
+    JobsComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
