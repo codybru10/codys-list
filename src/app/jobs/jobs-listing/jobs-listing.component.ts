@@ -9,8 +9,12 @@ import { Job } from '../job';
 export class JobsListingComponent {
   @Input() childJobs: Job[];
   @Output() editSender = new EventEmitter();
+  @Output() deleteSender = new EventEmitter();
 
   editSaleBtn(currentJob) {
     this.editSender.emit(currentJob);
+  }
+  deleteJob(currentJob) {
+    this.deleteSender.emit(currentJob);
   }
 }

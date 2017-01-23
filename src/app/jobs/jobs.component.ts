@@ -30,4 +30,9 @@ export class JobsComponent {
   addJob(newJob) {
     this.masterJobs.push(newJob);
   }
+
+  deleteJob(clickedJob) {
+    var i = this.masterJobs.indexOf(clickedJob);
+    this.masterJobs.splice(i, 1);
+  }
 }
