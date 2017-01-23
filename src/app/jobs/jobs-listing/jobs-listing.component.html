@@ -1,0 +1,7 @@
+<div class="well" *ngFor="let currentJob of childJobs">
+  <h4>{{currentJob.title}}</h4>
+  <p>{{currentJob.user}}</p>
+  <p>{{currentJob.field}}</p>
+  <p>{{currentJob.location}}</p>
+  <button (click)="editSaleBtn(currentJob)" class="btn btn-warning">Edit Job</button>
+</div>

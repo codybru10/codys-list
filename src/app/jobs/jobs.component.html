@@ -1,3 +1,2 @@
-<p>
-  jobs works!
-</p>
+<app-jobs-listing [childJobs]="masterJobs" (editSender)="editJob($event)"></app-jobs-listing>
+<app-edit-job [childSelectedJob]="selectedJob" (doneSender)="doneEditing()"></app-edit-job>

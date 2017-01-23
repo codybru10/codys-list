@@ -11,6 +11,8 @@ import { EventsComponent } from './events/events.component';
 import { SalesListingComponent } from './sales/sales-listing/sales-listing.component';
 import { NewSaleComponent } from './sales/new-sale/new-sale.component';
 import { EditSaleComponent } from './sales/edit-sale/edit-sale.component';
+import { JobsListingComponent } from './jobs/jobs-listing/jobs-listing.component';
+import { EditJobComponent } from './jobs/edit-job/edit-job.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EditSaleComponent } from './sales/edit-sale/edit-sale.component';
     EventsComponent,
     SalesListingComponent,
     NewSaleComponent,
-    EditSaleComponent
+    EditSaleComponent,
+    JobsListingComponent,
+    EditJobComponent
   ],
   imports: [
     BrowserModule,

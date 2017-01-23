@@ -1,0 +1,13 @@
+<div>
+  <div *ngIf="childSelectedJob">
+    <label for="title">Enter a new title</label>
+    <input type="text" name="title" [(ngModel)]="childSelectedJob.title">
+    <label for="user">Enter a new user</label>
+    <input type="text" name="user" [(ngModel)]="childSelectedJob.user">
+    <label for="field">Enter a new description</label>
+    <input type="text" name="field" [(ngModel)]="childSelectedJob.field">
+    <label for="location">Enter a new location</label>
+    <input type="text" name="location" [(ngModel)]="childSelectedJob.location">
+    <button class="btn btn-primary" (click)="submitEdit()">Save</button>
+  </div>
+</div>
