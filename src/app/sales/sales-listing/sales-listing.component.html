@@ -1,0 +1,8 @@
+<div class="well" *ngFor="let currentSale of childSales">
+  <h4>{{currentSale.title}}</h4>
+  <p>Posted by: {{currentSale.user}}</p>
+  <p>{{currentSale.description}}</p>
+  <p>${{currentSale.price}}</p>
+  <p>{{currentSale.location}}</p>
+  <button class="btn btn-warning" (click)="editSaleBtn(currentSale)">Edit</button>
+</div>

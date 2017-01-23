@@ -1,3 +1,5 @@
-<p>
-  sales works!
-</p>
+<h1>Sales</h1>
+<app-sales-listing [childSales]="masterSales" (saleSender)="editSale($event)"></app-sales-listing>
+<app-new-sale (newSaleSender)="addSale($event)" *ngIf="newSaleToggle"></app-new-sale>
+<app-edit-sale [childSelectedSale]="selectedSale" (doneEditingSender)="doneEditing()"></app-edit-sale>
+<button class="btn btn-success" (click)="saleToggle()">Add Sale Form</button>

@@ -8,6 +8,9 @@ import { routing } from './app.routing';
 import { SalesComponent } from './sales/sales.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { EventsComponent } from './events/events.component';
+import { SalesListingComponent } from './sales/sales-listing/sales-listing.component';
+import { NewSaleComponent } from './sales/new-sale/new-sale.component';
+import { EditSaleComponent } from './sales/edit-sale/edit-sale.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { EventsComponent } from './events/events.component';
     WelcomeComponent,
     SalesComponent,
     JobsComponent,
-    EventsComponent
+    EventsComponent,
+    SalesListingComponent,
+    NewSaleComponent,
+    EditSaleComponent
   ],
   imports: [
     BrowserModule,

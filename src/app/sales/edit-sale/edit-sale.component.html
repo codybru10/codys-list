@@ -1,0 +1,15 @@
+<div>
+  <div *ngIf="childSelectedSale">
+    <label for="title">Enter a new title</label>
+    <input type="text" name="title" [(ngModel)]="childSelectedSale.title">
+    <label for="user">Enter a new user</label>
+    <input type="text" name="user" [(ngModel)]="childSelectedSale.user">
+    <label for="description">Enter a new description</label>
+    <input type="text" name="description" [(ngModel)]="childSelectedSale.description">
+    <label for="price">Enter a new price</label>
+    <input type="text" name="price" [(ngModel)]="childSelectedSale.price">
+    <label for="location">Enter a new location</label>
+    <input type="text" name="location" [(ngModel)]="childSelectedSale.location">
+    <button class="btn btn-primary" (click)="doneEditingBtn()">Save</button>
+  </div>
+</div>

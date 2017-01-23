@@ -1,15 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Sale } from './sale';
 
 @Component({
   selector: 'app-sales',
-  templateUrl: './sales.component.html',
-  styleUrls: ['./sales.component.css']
+  templateUrl: './sales.component.html'
 })
-export class SalesComponent implements OnInit {
+export class SalesComponent {
+  newSaleToggle = false;
+  selectedSale = null;
 
-  constructor() { }
+  masterSales: Sale[] = [
+    new Sale('JerkGuy101', 'Stolen Bike', 'Found this on some poor sap\'s porch', 5, 'Portland, OR'),
+    new Sale('CoolPerson', 'Ford Mustang', 'Shelby Edition', 55000, 'Southeast Portland, OR')
+  ];
 
-  ngOnInit() {
+  addSale(sentSale){
+    this.masterSales.push(sentSale);
+  }
+
+  saleToggle(){
+    this.newSaleToggle = !this.newSaleToggle;
+  }
+
+  editSale(clickedSale){
+    this.selectedSale = clickedSale;
+  }
+
+  doneEditing(){
+    this.selectedSale = null;
   }
 
 }
