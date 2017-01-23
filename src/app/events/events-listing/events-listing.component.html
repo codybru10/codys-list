@@ -1,0 +1,8 @@
+<div class="well" *ngFor="let currentEvent of childEvents">
+  <h4>{{currentEvent.title}}</h4>
+  <p>Posted by: {{currentEvent.user}}</p>
+  <p>{{currentEvent.date}}</p>
+  <p>{{currentEvent.venue}}</p>
+  <p>{{currentEvent.location}}</p>
+  <button class="btn btn-warning" (click)="editEventBtn(currentEvent)">Edit</button>
+</div>

@@ -14,6 +14,9 @@ import { EditSaleComponent } from './sales/edit-sale/edit-sale.component';
 import { JobsListingComponent } from './jobs/jobs-listing/jobs-listing.component';
 import { EditJobComponent } from './jobs/edit-job/edit-job.component';
 import { NewJobComponent } from './jobs/new-job/new-job.component';
+import { EventsListingComponent } from './events/events-listing/events-listing.component';
+import { NewEventComponent } from './events/new-event/new-event.component';
+import { EditEventComponent } from './events/edit-event/edit-event.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { NewJobComponent } from './jobs/new-job/new-job.component';
     EditSaleComponent,
     JobsListingComponent,
     EditJobComponent,
-    NewJobComponent
+    NewJobComponent,
+    EventsListingComponent,
+    NewEventComponent,
+    EditEventComponent
   ],
   imports: [
     BrowserModule,

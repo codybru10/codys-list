@@ -1,0 +1,15 @@
+<div>
+  <div *ngIf="childSelectedEvent">
+    <label for="title">Enter a new title</label>
+    <input type="text" name="title" [(ngModel)]="childSelectedEvent.title">
+    <label for="date">Enter a new date</label>
+    <input type="text" name="date" [(ngModel)]="childSelectedEvent.date">
+    <label for="user">Enter a new user</label>
+    <input type="text" name="user" [(ngModel)]="childSelectedEvent.user">
+    <label for="venue">Enter a new venue</label>
+    <input type="text" name="venue" [(ngModel)]="childSelectedEvent.venue">
+    <label for="location">Enter a new location</label>
+    <input type="text" name="location" [(ngModel)]="childSelectedEvent.location">
+    <button class="btn btn-primary" (click)="doneEditingBtn()">Save</button>
+  </div>
+</div>

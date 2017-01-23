@@ -1,3 +1,4 @@
-<p>
-  events works!
-</p>
+<app-events-listing [childEvents]="masterEvents" (eventSender)="editEvent($event)"></app-events-listing>
+<app-new-event (sendNewEvent)="addEvent($event)" *ngIf="newEventForm"></app-new-event>
+<app-edit-event [childSelectedEvent]="selectedEvent" (doneEditingEvent)="doneEditing()"></app-edit-event>
+<button class="btn btn-primary" (click)="toggleForm()">Add an Event</button>
